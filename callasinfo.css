@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+h2
+{
+  position: absolute;
+  top:25%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: 0;
+  padding: 0;
+  font-size: 4em;
+  color: transparent;
+  text-transform: uppercase;
+}
+h2 span:nth-child(1)
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #000;
+  transition: 0.5s;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+  overflow: hidden;
+}
+h2:hover span:nth-child(1)
+{
+  transform: translateY(-18px);
+}
+h2 span:nth-child(2)
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #000;
+  transition: 0.5s;
+  clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+  overflow: hidden;
+}
+h2:hover span:nth-child(2)
+{
+  transform: translateY(18px);
+}
+h2 span:nth-child(3)
+{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) scaleY(0);
+  width: 98%;
+  color: #000;
+  background: linear-gradient(to right,#fcb045, #fd1d1d, #833ab4);
+  font-size: 0.25em;
+  font-weight: 500;
+  letter-spacing: 0.7em;
+  text-align: center;
+  padding-left: 20px;
+  margin-left: 5px;
+  transition: 0.5s;
+}
+h2:hover span:nth-child(3)
+{
+  transform: translateY(-50%) scaleY(1);
+}
+
+section
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 98%;
+  height: 100vh;
+  background: url(images/Callas1.jpg);
+  background-attachment: fixed;
+  clip-path: circle(100px at center);
+}
+
+section .banner
+{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+section .banner video
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+
+.container1
+{
+  position: relative;
+  margin-top: 150vh;
+  background: #E0E0E0;
+  padding: 50px 100px;
+  width: 98%;
+}
+.container1 h3
+{
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+.title
+{
+  position: absolute;
+  top: 250px;
+  z-index: 1;
+  font-size: 3em;
+  text-align: center;
+  width: 100%;
+}
+::-webkit-scrollbar
+{
+  width: 12px;
+
+}
+::-webkit-scrollbar-thumb
+{
+  background: linear-gradient(transparent,#30ff00);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover
+{
+  background: linear-gradient(transparent,#00c6ff);
+
+}
+#progressbar
+{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 0;
+  width: 2%;
+  border-radius: 10px;
+  background: linear-gradient(to top,#fcb045, #fd1d1d, #833ab4);
+}
+.wrapper
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.container
+{
+  width: 200px;
+  perspective: 1000px;
+}
+.cube
+{
+  margin: auto;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  transform-style: preserve-3d;
+  transition: transform 2s ease;
+}
+.cube:hover
+{
+  transform: rotateX(180deg) rotateY(720deg);
+}
+.side
+{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 10px;
+}
+.side.back
+{
+  transform: translateZ(-50px) rotateX(180deg);
+}
+.side.left
+{
+  transform: translateX(-50px) rotateY(-90deg);
+}
+.side.right
+{
+  transform: translateX(50px) rotateY(90deg);
+}
+.side.front
+{
+  transform: translateZ(50px);
+
+}
+.side.right
+{
+  transform: translateY(-50px) rotateX(90deg);
+}
+.side.bottom
+{
+  transform: translateY(50px) rotateX(90deg);
+}
+.side .icon
+{
+  margin: 30% auto;
+  vertical-align: middle;
+  font-size: 40px;
+}
+.side.grey
+{
+  color: #777;
+  background-color: white;
+}
+.side.black
+{
+  color: white;
+  background-color: #ff0000;
+}
+.side.twitter
+{
+  color: white;
+  background-color: #0084b4;
+}
+.side.facebook
+{
+  color: white;
+  background-color: #3b5998;
+}
+.side.apply
+{
+  color: white;
+  background: #ff00cc;
+}
+.side.home
+{
+  color: white;
+  background: #80ff00;
+}
+.side.pathway
+{
+  color: white;
+  background: #ffc400;
+}

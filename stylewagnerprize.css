@@ -1,0 +1,60 @@
+body{
+	background: black url(images/markgr1.jpg);
+	background-repeat:repeat;
+	background-attachment:fixed;
+	background-position:center;
+}
+
+.title
+{
+text-align: center;
+}
+
+.title h1 {
+	display: inline-block;
+		color:white;
+		text-shadow: 2px 2px 5px black;
+	font-size:2em;
+
+}
+
+
+a {
+	color:rgb(51,204,255);
+	text-shadow: 2px 2px 5px black;
+	text-decoration: none;
+
+}
+
+.blur-container {
+	text-align: center;
+}
+.blur {
+background-image: url(images/markgr1blur.jpg);
+background-position: center;
+background-repeat: repeat;
+background-attachment: fixed;
+width: 700px;
+box-shadow: -10px -10px 25px black, 10px 10px 25px black;
+display: inline-block;
+}
+
+
+
+h4 {
+	font-size: 20px;
+	text-align: justify;
+	color:white;
+	padding: 3%;
+text-shadow: 2px 2px 5px black;
+}
+
+a:hover {
+	text-decoration: underline;
+	color:rgb(0,0,153);
+}
+
+
+h5 {
+text-align: center;
+}

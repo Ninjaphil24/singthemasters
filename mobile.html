@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Sing Wagner in Bayreuth. Singing Competition in Germany.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="opera, course, studio, europe, classica, europa, european, singer, singing, Germany, UK, England">
+<title>SING THE MASTERS</title>
+<link rel="stylesheet" type="text/css" href="mobile.css">
+<link rel="stylesheet" href="swiper.min.css">
+
+</head>
+
+<body>
+
+
+
+
+  <div class="swiper-container gallery-top">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide" style="background-image:url(images/collage.jpg)">
+          <div class="content">
+
+        <p>
+        <!-- <div class="title"> -->
+
+
+        <h1> "SING THE MASTERS"
+           COMPETITIONS' PLATFORM</h1>
+        <!-- </div>   -->
+        <br><br><br><br><br><br>
+      <h2>Pick a composer to enter one of our competitions.</h2>
+        <br><br><br><br>
+        </p>
+        </div>
+        </div>
+
+        <div class="swiper-slide"style="background-image:url(images/Wagner.jpg)">
+            <div class="content">
+
+              <p>
+        <div class="form">
+                <a href="wagnerprizemobile.html">WAGNER</a> <br> <br>
+                </div>
+              </p>
+        </div>
+        </div>
+
+        <div class="swiper-slide"style="background-image:url(images/Callas.jpg)">
+            <div class="content">
+
+              <p>
+        <div class="form">
+                <a href="callas.html">CALLAS</a> <br> <br>
+                </div>
+              </p>
+        </div>
+        </div>
+
+<div class="swiper-slide"style="background-image:url(images/Verdi.jpg)">
+  <div class="content">
+    <p>
+  <div class="form">
+      <a href="https://www.fulhamopera.com/verdi-prize" target="_blank">VERDI</a>
+      </div>
+    </p>
+  </div>
+</div>
+
+
+
+
+
+</div>
+
+</div>
+</div>
+
+<div class="swiper-button-next swiper-button-white"></div>
+<div class="swiper-button-prev swiper-button-white"></div>
+</div>
+
+<div class="swiper-container gallery-thumbs">
+ <div class="swiper-wrapper">
+   <div class="swiper-slide" style="background-image:url(images/collage.jpg)"></div>
+   <div class="swiper-slide" style="background-image:url(images/Wagner.jpg)"> <h3>WAGNER</h3> </div>
+    <div class="swiper-slide" style="background-image:url(images/Callas.jpg)"> <h4>CALLAS</h4> </div>
+<div class="swiper-slide" style="background-image:url(images/Verdi.jpg)"> <h3>VERDI</h3> </div>
+
+
+     </div>
+      </div>
+
+      <!-- Swiper JS -->
+      <script src="swiper.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var galleryThumbs = new Swiper('.gallery-thumbs', {
+          spaceBetween: 10,
+          slidesPerView: 4,
+          loop: true,
+          freeMode: true,
+          loopedSlides: 4, //looped slides should be the same
+          watchSlidesVisibility: true,
+          watchSlidesProgress: true,
+        });
+        var galleryTop = new Swiper('.gallery-top', {
+          spaceBetween: 10,
+          loop:true,
+          loopedSlides: 4, //looped slides should be the same
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          thumbs: {
+            swiper: galleryThumbs,
+          },
+        });
+      </script>
+
+</body>
+</html>
